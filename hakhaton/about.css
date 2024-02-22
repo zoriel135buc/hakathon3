@@ -1,0 +1,42 @@
+.bg-container{
+    
+
+        background-image: url(https://ruachtova.org.il/wp-content/uploads/2023/10/09140704/desktop.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+       background-position: center;
+       height: 500px;
+    
+}
+
+.bg-container>h1{
+    color: white;
+}
+
+.container-contact{
+   
+    border: 3px solid black ;
+   float: right;
+    height:80vh;
+    width: 50vw;
+    margin-top: 1vh;
+   margin-right:10vh;
+   padding-top: 5vh;
+   
+}
+form{
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+div h1{
+    text-align: center;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xxx-large;
+}
+
+ div h3{
+    color: white;
+    padding-left: 20px;
+}
