@@ -1,8 +1,10 @@
+// 
 const express = require('express');
 const bcrypt = require('express');
 const app = express();
 const router = express.Router();
 const knex = require('knex');
+//connection between database and Node.js application
 const db = knex({
     client:'pg',
     connection:{
@@ -15,16 +17,15 @@ const db = knex({
     }
 })
 
-const PORT = process.env.PORT || 3000;
 
-
+//Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send("okkk")
 });
-
+//extracts the values from the request body 
 app.post('/register', async (req, res) => {
     const { first_name, last_name, email, username, password } = req.body;
     try {
@@ -40,7 +41,8 @@ app.post('/register', async (req, res) => {
 
 
 
-
+//running the server 
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
