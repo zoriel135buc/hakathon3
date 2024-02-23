@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg {
+  text-align: center;
+  height: 600px;
+  background-image: url("front2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg > h4 {
+  padding-top: 75px;
+}
+
+.card-img-top {
+  height: 190px;
+}
+.bg2 {
+  text-align: center;
+  height: 600px;
+  background-image: url("soul\ or.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5%;
+  flex-wrap: wrap;
+  height: 200px;
+  padding-top: 50px;
+}
+.card-text,
+.card-title {
+  font-size: 15px;
+  text-shadow: 0 0 3px #ff0000;
+}
