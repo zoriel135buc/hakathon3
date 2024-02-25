@@ -31,7 +31,8 @@ app.post('/register', async (req, res) => {
     try {
         await db("users")
         .insert({first_name:first_name,last_name:last_name,email:email,username:username,password:password})
-         res.sendFile(__dirname+'/index/index.html')
+         res.sendFile(__dirname+"/index/index.html")
+       
     } catch (error) {
         console.error(error);
         res.status(500).send('Internal server error');
